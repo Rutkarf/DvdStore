@@ -1,0 +1,137 @@
+body, h1, h2, h3, p {
+         margin: 0;
+         padding: 0;
+       /*    overflow: hidden;*/
+       }
+       
+       ul {
+         list-style-type: none;
+         margin-top:50%;
+         align-self: flex-start;
+       }
+       
+       .movies-filter {
+         height: 100vh;
+         width: 7vw;
+         z-index: -1;       
+         background-color: #472eab;
+         font-size:5vh;
+         font-family: Arial, Helvetica, sans-serif;
+       }
+       .nav-button{
+        align-self: flex-start;
+        background: linear-gradient(to bottom, #1a0a76, #472eab);
+        border-bottom-right-radius: 10px; /* Arrondir le coin bas droit */
+        margin-left:-3.5vh;
+        width: 14.5vh;
+        color: white; /* Ajoutez une couleur de texte blanche pour contraster */
+       }
+       
+       .nav-link {
+       
+         color:  #171718;
+         font-size:small;
+         margin-top: 2vh;
+        
+        
+       }
+       .webSite{
+        margin-top: 3vh;
+        display: flex;
+        flex-direction : row;
+        height:50px;
+       }
+       
+       main {
+         display: flex;
+       }
+       
+       .movies-list {
+         display: flex;
+         flex-wrap: wrap;
+         align-items: center;
+         max-width: 80vw;
+         margin-top: 16vh;
+         background-color: #e5dad8;
+       }
+       
+       .movie-fiche {
+         background-color : color-mix(in srgb, #fceeeb 50%, #3A0144 50%);
+       }
+       
+       .movies-list div {
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+         padding: 20px;
+         max-width: 100%;
+         size: 100%;
+         margin: 20px;
+         width: calc(25% - 20px);
+         text-align: center;
+       }
+       
+       .movies-list img {
+         max-width: 50%;
+         height: auto;
+       }
+       
+       .movies-list h2 {
+         font-size: 1.6rem;
+         color: #550163;
+         margin-top: 10px;
+       }
+       
+       .movies-list h3 {
+         font-size: 1.2rem;
+         color: #3A0144;
+         margin-top: 5px;
+       }
+       .showButton{
+
+         display: flex;
+         justify-content: start;
+         width : max-content;
+         height: 30px;
+         text-align: center;
+       }
+       .movies-diapo{
+        position: absolute;
+        display: flex;
+        justify-content: flex-end;
+        justify-content: space-between;
+        height: 80vh;
+        flex-wrap: wrap;
+        max-width: 80vw;
+        margin-top: 16vh;
+        background-color: #8e3f31;
+       }
+       .table {
+        margin-left: center;
+        margin-right: center;
+        width: max-content;
+        align-items: center;
+        width: 100%; /* Largeur de la table */
+        border-collapse: collapse; /* Fusion des bordures des cellules */
+      }
+      
+      /* Style de la première ligne (ligne d'en-tête) */
+      .table thead tr {
+        background-color: #333; /* Couleur de fond de la ligne d'en-tête */
+        color: #fff; /* Couleur du texte de la ligne d'en-tête */
+      }
+      
+      /* Style des lignes impaires */
+      .table tbody tr:nth-child(odd) {
+        background-color: #f2f2f2; /* Couleur de fond des lignes impaires */
+      }
+      
+      /* Style des lignes paires */
+      .table tbody tr:nth-child(even) {
+        background-color: #fff; /* Couleur de fond des lignes paires */
+      }
+      
+      /* Style des cellules de la table */
+      .table td, .table th {
+        padding: 8px; /* Espacement interne des cellules */
+        border: 1px solid #ddd; /* Bordure des cellules */
+        text-align: left; /* Alignement du texte à gauche */
+      }

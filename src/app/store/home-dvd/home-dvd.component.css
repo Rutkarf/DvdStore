@@ -1,0 +1,30 @@
+
+main {
+  display: flex
+  ;
+}.movies-filter {
+         height: 100vh;
+         width: 7vw;
+         z-index: -1;       
+         background-color: #472eab;
+         font-size:5vh;
+         font-family: Arial, Helvetica, sans-serif;
+       }
+       .nav-button{
+        align-self: flex-start;
+        background: linear-gradient(to bottom, #1a0a76, #472eab);
+        border-bottom-right-radius: 10px; /* Arrondir le coin bas droit */
+        margin-left:-3.5vh;
+        width: 14.5vh;
+        color: white; /* Ajoutez une couleur de texte blanche pour contraster */
+       }
+       .movies-diapo{
+        position: center;
+        display: flex;
+        height: 80vh;
+        flex-wrap: wrap;
+       width: 50vw;
+        margin-left: center;
+        margin-top: 16vh;
+        background-color: #DEE8E9;
+       }

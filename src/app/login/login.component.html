@@ -1,0 +1,14 @@
+<div class="console">
+<form #myForm="ngForm" (ngSubmit)="onSubmit()">
+         <div class="form-group">
+           <label for="userName">Login</label>
+           <input type="text" id="" name="userName" [(ngModel)]="owner.userName" class="form-control" required>
+         </div>
+         <div class="form-group">
+           <label for="password">Password</label>
+           <input type="text" id="" name="password" [(ngModel)]="owner.password" class="form-control" required>
+         </div>
+         <button type="submit" (click)="handleUpdateClickButton" class="btn">Connexion</button>
+        
+       </form>
+</div>
