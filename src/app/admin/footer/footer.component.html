@@ -1,0 +1,26 @@
+<footer>
+<div class="footerOff">
+         <a href="goToDvd()">
+                  <img src="assets/images/dvd.png" alt="Liste-Dvd" style="width: 30px; margin-right: 20px"></a>
+         <a href="goToClient()" href="user/all">
+                  <img src="assets/images/client.png" alt="Liste-Client" style="width: 30px; margin-right: 20px"></a>
+         <a href="/registre">
+                  <img src="assets/images/registre.png" alt="Liste-registre"
+                           style="width: 15px; margin-right: 20px"></a>
+
+         <div class="input-group rounded mb-1">
+                  <input   type="search" 
+                           class="form-control rounded" 
+                           placeholder="Search" 
+                           aria-label="Search"
+                           aria-describedby="search-addon" 
+                           [(ngModel)]="searchText" />
+                  
+                  <button (click)="handleButtonSearchClick()">Search</button>
+                  <span class="input-group-text border-0" id="search-addon">
+
+                           <i class="fas fa-search"></i>
+                  </span>
+         </div>
+</div>
+</footer>

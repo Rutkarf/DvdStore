@@ -1,0 +1,68 @@
+<main>
+ <section id="home">
+  <div class="movies-filter">
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle">Category</button>
+      <div class="dropdown-content">
+        <button class="nav-button" (click)="handleGenreClickButton('action')">Action</button>
+        <button class="nav-button" (click)="handleGenreClickButton('adulte')">Adulte</button>
+        <button class="nav-button" (click)="handleGenreClickButton('Animation')">Animation</button>
+        <button class="nav-button" (click)="handleGenreClickButton('Comedie')">Comédie</button>
+        <button class="nav-button" (click)="handleGenreClickButton('Documentaire')">Documentaire</button>
+        <button class="nav-button" (click)="handleGenreClickButton('Drama')">Drama</button>
+        <button class="nav-button" (click)="handleGenreClickButton('Thriller')">Thriller</button>
+        <button class="nav-button" (click)="handleGenreClickButton('Sci-fy')">Sci-Fy</button>
+      </div>
+    </div>    
+    <aside class="webSite">
+      <img src="assets/images/logoDvd.png" alt="Browse more genre icon" style="width: 50px" />
+      <a class="nav-link" href="/HomeStore">Go to the web site</a>
+    </aside>
+  </div>
+  
+  <section classe="view" *ngIf="isListView" >
+    <div class="movies-list ">
+      <button class="showButton" (click)="toggleView()">Diaporama</button>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Cover</th>
+            <th>Name</th>
+            <th>Genre</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let dvd of dvdToShow; let index =index">
+            <td><img [src]="dvd.imgPath" alt="Into The Wild DVD cover" /></td>
+            <td>{{ dvd.name }}</td>
+            <td>{{ dvd.genre }}</td>
+            <td>
+              <a [href]="'/dvds/' + index">
+                <img src="../../assets/images/edit.png" alt="details icon" style="width: 40px" />
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section *ngIf="!isListView" class="diapo row-col">
+    <div class="movies-diapo">
+      <button class="showButton" (click)="toggleView()">List View</button>
+      <div class="movie-fiche" *ngFor="let dvd of dvdToShow; let index in index ">
+        <a [href]="'/dvds/'+index">
+          <img [src]="dvd.imgPath" alt="" />
+          <h2>
+            {{ dvd.name }}
+          </h2>
+          <h3>
+            {{ dvd.genre }}
+          </h3>
+          <img src="../../assets/images/edit.png" alt="details icon" style="width: 40px" />
+        </a>
+      </div>
+    </div>
+  </section>
+</section> 
+</main>

@@ -1,0 +1,68 @@
+<main>
+         <div class="movies-filter">
+    
+                  <ul class="movie-categorie">
+                    <!--<li class="nav-item">
+                            <a class="nav-link active" href="#">Genres</a>
+                        </li>-->
+                    <li class="nav-item">
+                      <button class="nav-button" (click)="handleGenreClickButton('action')">
+                        Action
+                      </button>
+                    </li>
+                    <li class="nav-item">
+                      <button class="nav-button" (click)="handleGenreClickButton('adulte')">
+                        Adulte
+                      </button>
+                    </li>
+                    <li class="nav-item">
+                      <button class="nav-button" (click)="handleGenreClickButton('Animation')">
+                        Animation
+                      </button>
+                    </li>
+                    <li class="nav-item">
+                      <button class="nav-button" (click)="handleGenreClickButton('Comedie')">
+                        Comédie
+                      </button>
+                    </li>
+                    <li class="nav-item">
+                      <button class="nav-button" (click)="handleGenreClickButton('Documentaire')">
+                        Documentaire
+                      </button>
+                    </li>
+                    <li class="">
+                      <button class="nav-button" (click)="handleGenreClickButton('Drama')">
+                        Drama
+                      </button>
+                    </li>
+                    <li class="nav-item">
+                      <button class="nav-button" (click)="handleGenreClickButton('Thriller')">
+                        Thriller
+                      </button>
+                    </li>
+                    <li class="nav-item">
+                      <button class="nav-button" (click)="handleGenreClickButton('Sci-fy')">
+                        Sci-Fy
+                      </button>
+                    </li>
+                    <li class="webSite">
+                      <img src="assets/images/logoDvd.png" alt="Browse more genre icon" style="width: 50px" />
+                      <a class="nav-link" href="/HomeStore">Go to the web site</a>
+                    </li>
+                  </ul>
+                </div>
+         <div class="movies-diapo">
+                  <div class="movie-fiche" *ngFor="let dvd of dvdToShow; let index in dvdToShow ">
+                           <a [href]="'/dvds/'+index">
+                            <td><img [src]="dvd.imgPath" alt="Into The Wild DVD cover" /></td>
+                                    <h2>
+                                             {{ dvd.name }}
+                                    </h2>
+                                    <h3>
+                                             {{ dvd.genre }}
+                                    </h3>
+                                    <img src="assets/images/details.png" alt="details icon" style="width: 40px" />
+                           </a>
+                  </div>
+         </div>
+</main>

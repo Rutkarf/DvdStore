@@ -1,0 +1,96 @@
+main{
+         width: 100%;
+         height: 100%;
+         text-align: center;
+ }
+       
+.movie-list{
+         display: flex;
+         float: right;
+         display:flex;
+         margin-top: 60vh; /* Ajoutez la marge supérieure souhaitée pour déplacer le tableau sous la barre de navigation */
+       
+      
+         
+}
+.form-container {
+         display: flex;
+         flex-wrap: wrap;
+       }
+.column {
+         flex: 1;
+         padding: 10px;
+       }
+label {
+         display: block;
+         font-weight: bold;
+         margin-bottom: 5px;
+       }
+.console {
+         margin-top: 3vh;
+         display: flex;
+         float: left;
+         align-items: center;
+         background-color: #DDE8E9;
+         margin-left:10%;
+         border-radius: 22%;
+         width: 34vw;
+         height: 70vh;
+         justify-content: space-around;
+         
+       }
+       
+       .form-group{
+         margin-top:12%;
+         padding: 5px;
+         justify-content :space-between;
+        
+        
+       }
+       
+       .form-control{
+         border-radius:8%;
+       }
+       
+       
+       .btnAdd{
+         color: rgb(53, 194, 18);
+       }
+       
+       .btnDel{
+         color: #9b0808;
+       }
+       
+       .table {
+               margin-top: 2.8%;
+               flex-wrap: wrap;
+                margin-left: 50%;
+                width: max-content;
+                align-items: center;
+                width: 40%; /* Largeur de la table */
+                border-collapse: collapse; /* Fusion des bordures des cellules */
+              }
+              
+              /* Style de la première ligne (ligne d'en-tête) */
+              .table thead tr {
+                background-color: #f4cccc; /* Couleur de fond de la ligne d'en-tête */
+                color: #535353; /* Couleur du texte de la ligne d'en-tête */
+              }
+              
+              /* Style des lignes impaires */
+              .table tbody tr:nth-child(odd) {
+                background-color: #f2f2f2; /* Couleur de fond des lignes impaires */
+              }
+              
+              /* Style des lignes paires */
+              .table tbody tr:nth-child(even) {
+                background-color: #fff; /* Couleur de fond des lignes paires */
+              }
+              
+              /* Style des cellules de la table */
+              .table td, .table th {
+                border-radius: 22%;
+                padding: 8px; /* Espacement interne des cellules */
+                border: 1px solid #ddd; /* Bordure des cellules */
+                text-align: left; /* Alignement du texte à gauche */
+              }
